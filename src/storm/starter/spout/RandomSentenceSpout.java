@@ -46,6 +46,7 @@ public class RandomSentenceSpout extends BaseRichSpout {
         "four score and seven years ago", "snow white and the seven dwarfs", "i am at two with nature" };
     String sentence = sentences[_rand.nextInt(sentences.length)];
     _collector.emit(new Values(sentence));
+
   }
 
   @Override
